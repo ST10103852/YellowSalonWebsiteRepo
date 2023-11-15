@@ -14,10 +14,10 @@
         <div     class="logo">Yellow Salon</div>
         <div class="nav-items">
                 <a href="/">Home</a>
-                <a href="/">Browse Styles</a>
-                <a href="/">Online Salon</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
+                <a href="#" onclick="showBrowse()" >Browse Styles</a>
+                <a href="#" onclick="showOnline()">Online Salon</a>
+                <a href ="#" onclick="showAbout()">About</a>
+                <a href="#" onclick="showContact()">Contact</a>
 
         </div>
     </nav>
@@ -38,6 +38,22 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        
+        function showContact(){
+            window.location.href="/ContactUs";
+        }
+        function showAbout() {
+            window.location.href = "/About";
+        }
+        function showBrowse() {
+            window.location.href = "/BrowseStyle";
+        }
+         function showOnline() {
+                window.location.href = "/Online Style";
+        }
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
