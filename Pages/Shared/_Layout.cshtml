@@ -11,16 +11,17 @@
 <body>
     <header>
         <nav>
-        <div     class="logo">Yellow Salon</div>
-        <div class="nav-items">
+            <div class="logo">Yellow Salon</div>
+            <div class="nav-items">
                 <a href="/">Home</a>
+                <a href="#" onclick="showSignIn()">SignIn</a>
+                <a href="#" onclick="showSignUp()">SignUp</a>              
                 <a href="#" onclick="showBrowse()" >Browse Styles</a>
                 <a href="#" onclick="showOnline()">Online Salon</a>
                 <a href ="#" onclick="showAbout()">About</a>
                 <a href="#" onclick="showContact()">Contact</a>
-
-        </div>
-    </nav>
+            </div>
+        </nav>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -49,9 +50,15 @@
         function showBrowse() {
             window.location.href = "/BrowseStyle";
         }
-         function showOnline() {
-                window.location.href = "/Online Style";
+        function showOnline() {
+            window.location.href = "/Online Style";
         }
+        function showSignIn() {
+            window.location.href = "/SignIn";
+        }
+        function showSignUp() {
+            window.location.href = "/SignUp";
+        }       
     </script>
 
     @await RenderSectionAsync("Scripts", required: false)
