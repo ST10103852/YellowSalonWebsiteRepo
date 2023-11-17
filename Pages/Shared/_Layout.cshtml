@@ -14,12 +14,12 @@
             <div class="logo">Yellow Salon</div>
             <div class="nav-items">
                 <a href="/">Home</a>
-                <a href="#" onclick="showSignIn()">SignIn</a>
-                <a href="#" onclick="showSignUp()">SignUp</a>              
-                <a href="#" onclick="showBrowse()" >Browse Styles</a>
-                <a href="#" onclick="showOnline()">Online Salon</a>
-                <a href ="#" onclick="showAbout()">About</a>
-                <a href="#" onclick="showContact()">Contact</a>
+                <a href="#" onclick="showBrowse()">Men Hairstyles</a>
+                <a href="#" onclick="showOnline()">Women Hairstyles</a>
+                <a href="#" onclick="showNails()">Beauty & Nails</a>
+                <a href="#" onclick="showAbout()">About</a>
+                <a href="#" onclick="showContact()">Contact Us</a>
+
             </div>
         </nav>
     </header>
@@ -40,25 +40,22 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     <script>
-        
-        function showContact(){
-            window.location.href="/ContactUs";
+
+        function showContact() {
+            window.location.href = "/ContactUs";
         }
         function showAbout() {
             window.location.href = "/About";
         }
         function showBrowse() {
-            window.location.href = "/BrowseStyle";
+            window.location.href = "/men_hairstyles";
         }
         function showOnline() {
-            window.location.href = "/Online Style";
+            window.location.href = "/women_hairstyles";
         }
-        function showSignIn() {
-            window.location.href = "/SignIn";
+        function showNails() {
+            window.location.href = "/nails";
         }
-        function showSignUp() {
-            window.location.href = "/SignUp";
-        }       
     </script>
 
     @await RenderSectionAsync("Scripts", required: false)

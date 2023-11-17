@@ -13,73 +13,73 @@
     <link rel="stylesheet" href="~/css/Style.css" />
 
 
- 
-<style>
-* {
-  box-sizing:border-box;
-}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-.container {
-  padding: 64px;
-}
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both
-}
+        .container {
+            padding: 64px;
+        }
 
-.column-66 {
-  float: left;
-  width: 66.66666%;
-  padding: 20px;
-}
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
 
-.column-33 {
-  float: left;
-  width: 33.33333%;
-  padding: 20px;
-}
+        .column-66 {
+            float: left;
+            width: 66.66666%;
+            padding: 20px;
+        }
 
-.large-font {
-  font-size: 48px;
-}
+        .column-33 {
+            float: left;
+            width: 33.33333%;
+            padding: 20px;
+        }
 
-.xlarge-font {
-  font-size: 64px
-}
+        .large-font {
+            font-size: 48px;
+        }
 
-.button {
-  border: none;
-  color: white;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #fdcc04;
-}
+        .xlarge-font {
+            font-size: 64px
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #fdcc04;
+        }
 
         #more {
             display: none;
         }
 
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
+        img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
 
-  img {
-    margin: auto;
-  }
-  
+        img {
+            margin: auto;
+        }
+
         .container2 {
             padding: 10px;
-           
         }
 
         input[type=text], input[type=submit] {
@@ -104,49 +104,52 @@ img {
             input[type=submit]:hover {
                 opacity: 0.8;
             }
-</style>
+    </style>
 
-    <img src="~/image2.png" alt="Image Description" height="400" width="1500" />
+
 
 </head>
 <body>
+    <div>
+        <button href="#" onclick=" showSignIn()" class="button">Sign in</button>
+        <button href="#" onclick="showSignUp()" class="button">Sign Up</button>
+    </div>
+    <div style="text-align:center">
+        <h2>Welcome to Yellow Salon!</h2>
+        <p>Book your next style online and you won't have to stand in line ever again.</p>
+    </div>
 
-<div style="text-align:center">
-  <h2>Welcome to the Yellow Salon</h2>
-  <p>Book your next style online and you won't have to stand in line ever again</p>
-</div>
-
-<!-- The App Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="xlarge-font"><b>Yellow Salon</b></h1>
-      <h1 class="large-font" style="color:#fdcc04;"><b>Get your hair & Nails done</b></h1>
+    <!-- The App Section -->
+    <div class="container">
+        <div class="row">
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Yellow Salon</b></h1>
+                <h1 class="large-font" style="color:#fdcc04;"><b>Get your hair & Nails done</b></h1>
                 <p><span style="font-size:36px">Look And Feel Your Best Now.</span> With Yellow Salon, a free online appointment booking app, you can manage your appointments from anywhere, with just a few clicks. Easily reschedule or cancel appointments without having to pick up the phone. Plus, we'll even send you reminders so you'll never miss another appointment again. Download Yellow Salon today and start taking control of your schedule with ease!.</p>
                 <!-- <button class="button">Download Application</button> -->
+            </div>
+            <div class="column-33">
+                <img src="/image00002.png" width="335" height="471">
+            </div>
+        </div>
     </div>
-    <div class="column-33">
-        <img src="/image00002.png" width="335" height="471" >
-    </div>
-  </div>
-</div>
 
-<!-- Clarity Section -->
-<div class="container" style="background-color:#f1f1f1">
-  <div class="row">
-    <div class="column-33">
-      <img src="/image00001.png" alt="App" width="335" height="471">
-    </div>
-    <div class="column-66">
-      <h1 class="xlarge-font"><b>Clarity</b></h1>
-      <h1 class="large-font" style="color:red;"><b>YellowSalon, who?</b></h1>
+    <!-- Clarity Section -->
+    <div class="container" style="background-color:#f1f1f1">
+        <div class="row">
+            <div class="column-33">
+                <img src="/image00001.png" alt="App" width="335" height="471">
+            </div>
+            <div class="column-66">
+                <h1 class="xlarge-font"><b>Clarity</b></h1>
+                <h1 class="large-font" style="color:red;"><b>YellowSalon, who?</b></h1>
                 <p><span style="font-size:24px">A revolution in resolution.</span> Want to discover the top health and beauty businesses in your area? Look no further than YellowSalon's marketplace.YellowSalon is a convenient beauty scheduling app that makes it easy to find and book appointments with local barbers, hairdressers, estheticians, yoga instructors, therapists, and more.<span id="dots">...</span><span id="more"> With YellowSalon, you can browse through their profiles, read real reviews from verified customers, and even check out their work through their portfolios. Plus, it only takes a few minutes to set up an appointment with YellowSalon, and there are no fees or hidden charges. So why stress about your next beauty appointment when yellowSalon makes it so easy.</span></p>
                 <button onclick="myFunction()" id="myBtn" class="button" style="background-color:red">Read More</button>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- The App Section -->
+    <!-- The App Section -->
     <div class="container">
         <div class="row">
             <div class="column-66">
@@ -160,27 +163,10 @@ img {
             </div>
         </div>
     </div>
-<div>
-        <form action="/action_page.php">
-            <div class="container2">
-                <h2>Subscribe to our Newsletter</h2>
-                <p>Subcribe to stay updated with news about the latest hairstyles, updates of our app and features and ways to be part of YellowSalon.</p>
-            </div>
-            <div class="container2" style="background-color:white">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="text" placeholder="Email address" name="mail" required>
-                <label>
-                    <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-                </label>
-            </div>
 
-            <div class="container2">
-                <input type="submit" value="Subscribe">
-            </div>
-        </form>
-    </div>
+
     <br />
-    <br/>
+    <br />
     <br />
     <br />
 
@@ -199,6 +185,13 @@ img {
                 btnText.innerHTML = "Read less";
                 moreText.style.display = "inline";
             }
+        }
+
+        function showSignIn() {
+            window.location.href = "/SignIn";
+        }
+        function showSignUp() {
+            window.location.href = "/SignUp";
         }
     </script>
 </body>
