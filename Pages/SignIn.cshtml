@@ -8,6 +8,7 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            background-color:white;
         }
 
         * {
@@ -100,7 +101,7 @@
                 <button type="button" class="form_cancelbtn" id="cancelbtn">
                     Cancel
                 </button>      
-                <button type="submit" class=" form_signinbtn" id="signinbtn">
+                <button href="#" onclick="showOnline()" type="submit" class=" form_signinbtn" id="signinbtn">
                     SignIn
                 </button>
             </div>
@@ -129,6 +130,13 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
+    </script>
+
+    <script>
+
+        function showOnline() {
+            window.location.href = "/women_hairstyles";
+        }
     </script>
 </body>
  
